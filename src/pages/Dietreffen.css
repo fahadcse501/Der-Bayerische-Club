@@ -1,0 +1,43 @@
+
+
+.die-treffen ion-card-header {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  padding-bottom: 0;
+  padding-left: 1.5rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.die-treffen ion-accordion-group {
+  margin: 1.5rem 1rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  background: #264167;
+}
+
+.die-treffen ion-accordion {
+  background: #264167;
+  /* border-bottom: 1px solid #e0e0e0; */
+}
+
+.die-treffen ion-accordion:last-child {
+  border-bottom: none;
+}
+
+.die-treffen ion-item[slot="header"] {
+  --background: transparent;
+  --color: #ffffff;
+  --padding-start: 1.5rem;
+  --padding-end: 1rem;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.die-treffen .ion-padding[slot="content"] {
+  background: #264167;
+  color: #ffffff;
+  line-height: 1.6;
+}

@@ -1,0 +1,7 @@
+{
+  "name": "der-bayerische-club",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react-vite"
+}

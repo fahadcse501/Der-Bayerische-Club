@@ -1,0 +1,44 @@
+.geschichte ion-card:nth-child(1) { --background: #264167; }
+.geschichte ion-card:nth-child(2) { --background: #264167; }
+.geschichte ion-card:nth-child(3) { --background: #264167; }
+.geschichte ion-card:nth-child(4) { --background: #264167; }
+.geschichte ion-card:nth-child(5) { --background: #264167; }
+.geschichte ion-card:nth-child(6) { --background: #264167; }
+
+.geschichte ion-card ion-card-header { --background: #ffffff; }
+.geschichte ion-card ion-card-title { 
+    color: #264167; 
+    font-weight: 700; 
+    text-transform: uppercase; 
+    line-height: 1.2; 
+    font-size: 1rem;
+    margin-top: -5px;
+    margin-bottom: -5px;
+}
+.geschichte ion-card ion-card-subtitle { 
+    color: #264167; 
+    font-weight: 400; 
+    text-transform: uppercase; 
+    font-size: 0.9rem; 
+    margin-top: -5px;
+    margin-bottom: 10px;
+    }
+.geschichte ion-card ion-card-content { 
+    color: #ffffff;
+    font-weight: 400; 
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 10px;
+    padding: 1rem 1rem 1rem 1rem;
+}
+
+.geschichte ion-card:nth-child(1) ion-card-header { --background: #001F46; }
+.geschichte ion-card:nth-child(1) ion-card-header ion-card-title { 
+    color: #ffffff; 
+    font-weight: 700; 
+    text-transform: uppercase; 
+    line-height: 1.2; 
+    font-size: 1rem;
+    margin-top: -5px;
+    margin-bottom: -5px;
+}
