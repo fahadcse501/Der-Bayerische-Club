@@ -2,8 +2,9 @@ import type { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
   appId: 'com.derbayerischeclub.app',
-  appName: 'der-bayerische-club',
+  appName: 'Der Bayerische Club',
   webDir: 'dist',
+  
   server: {
     allowNavigation: ['xemusk.com']
   }
