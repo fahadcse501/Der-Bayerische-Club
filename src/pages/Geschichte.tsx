@@ -9,11 +9,7 @@ const Geschichte: React.FC = () => {
     <IonPage>
       <IonContent fullscreen class="page-color geschichte">
 
-   <IonCard>
-    <IonCardHeader>
-      <IonCardTitle class="head-title">Der Bayerische Club – Geschichte und Selbstverständnis</IonCardTitle>
-    </IonCardHeader>
-  </IonCard>
+       <div className='head-title'>Der Bayerische Club – Geschichte und Selbstverständnis</div> 
 
   <IonCard>
     <IonCardHeader>

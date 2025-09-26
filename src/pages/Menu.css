@@ -1,6 +1,6 @@
 
 .menu-page ion-list {
-  --ion-background-color: transparent; /* Makes the list background transparent */
+  /* --ion-background-color: transparent; */
   /* White background for the list itself */
   border-radius: 12px; /* Rounded corners for a softer, modern feel */
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* Subtle shadow for depth */
