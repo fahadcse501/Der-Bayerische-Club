@@ -6,6 +6,7 @@ import './Faq.css';
 
 const Faq: React.FC = () => {
   return (
+   
     <IonPage>
       <IonContent fullscreen class="page-color faq-page">
         <IonCardHeader>Wissenswertes</IonCardHeader>

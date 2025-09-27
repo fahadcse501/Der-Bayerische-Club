@@ -6,6 +6,7 @@
   --padding-bottom: 2rem;
   --padding-start: 1.5rem;
   --padding-end: 1.5rem;
+  
 }
 
 .contact-page ion-card:nth-child(1) ion-card-content, .contact-page ion-card:nth-child(1) ion-card-header {
@@ -46,6 +47,7 @@
   border-radius: 12px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
   margin-bottom: 1.5rem;
+  margin-top: 40px;
 }
 
 .contact-page  ion-card-header {
