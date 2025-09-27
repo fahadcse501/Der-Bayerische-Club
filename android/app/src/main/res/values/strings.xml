@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <resources>
-    <string name="app_name">der-bayerische-club</string>
+    <string name="app_name">Der Bayerische Club</string>
     <string name="title_activity_main">der-bayerische-club</string>
     <string name="package_name">com.derbayerischeclub.app</string>
     <string name="custom_url_scheme">com.derbayerischeclub.app</string>

@@ -1,9 +1,8 @@
 
 .menu-page ion-list {
-  /* --ion-background-color: transparent; */
-  /* White background for the list itself */
-  border-radius: 12px; /* Rounded corners for a softer, modern feel */
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* Subtle shadow for depth */
+
+  border-radius: 12px;
+  /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);  */
   margin: 20px auto;
   max-width: 90%;
 }
@@ -35,5 +34,6 @@
   /* border-radius: 50%;  */
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   padding: 10px;
-  margin-bottom: 30px !important; /* Adds more space below the logo */
+  margin-top: 40px !important; /* Adds more space above the logo */
+  margin-bottom: 20px !important; /* Adds more space below the logo */
 }
