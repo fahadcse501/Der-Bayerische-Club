@@ -64,13 +64,15 @@
   max-width: 600px;
   margin: 0 auto;
   padding: 1.5rem;
-  /* background: #ffffff; */
+    --background: #001F46; 
+  background: #001F46 !important;
   border-radius: 12px;
   /* box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08); */
 }
 
 .contact-page  ion-item {
-  /* --background: transparent; */
+  --background: #001F46;
+  background: #001F46;
   /* --border-color: #dee2e6; / */
   /* --highlight-color-focused: var(--ion-color-primary); */
   --padding-start: 0;
@@ -82,6 +84,8 @@
   color: #ffffff !important;
   font-size: 0.9rem;
   padding-bottom: 0.3rem;
+    --background: #001F46; 
+  background: #001F46 !important;
 }
 
 .contact-page  ion-input, .contact-page ion-textarea {
@@ -94,17 +98,24 @@
   border: 1px solid #ced4da;
   margin-top: 0.5rem;
   color: #ffffff;
+    --background: #001F46; 
+  background: #001F46 !important;
 }
 
 .contact-page  ion-input.ion-touched, .contact-page  ion-textarea.ion-touched {
   border-color: var(--ion-color-primary);
   box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+    --background: #001F46; 
+  background: #001F46 !important;
 }
 
 .contact-page  ion-textarea {
   --padding-top: 1rem;
   min-height: 120px;
+    --background: #001F46; 
+  background: #001F46 !important;
 }
+
 
 .contact-page  ion-button {
   --border-radius: 8px;

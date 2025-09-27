@@ -1,6 +1,19 @@
+/* Force the entire page background */
+.menu-page {
+  --ion-background-color: #001F46; /* Ionic background variable */
+  background: #001F46 !important;
+}
+
+/* Force ion-list to use your blue */
+.menu-page ion-list {
+  --ion-background-color: #001F46;
+  background: #001F46 !important;
+}
+
 
 .menu-page ion-list {
-
+  --ion-background-color: #001F46;
+  background: #001F46 !important;
   border-radius: 12px;
   /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);  */
   margin: 20px auto;
@@ -12,9 +25,10 @@
   --border-radius: 10px;
   --inner-padding-end: 20px;
   --inner-padding-start: 20px;
-  --ripple-color: #007bff; /* A nice blue ripple effect on click */
-  color: #333; /* Darker text color for better readability */
-  font-family: 'Segoe UI', 'Roboto', sans-serif; /* A modern, clean font */
+  --ripple-color: #007bff;
+  background: #001F46;
+  color: #333; 
+  font-family: 'Segoe UI', 'Roboto', sans-serif; 
   font-weight: 500;
   padding: 12px 0;
   transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
