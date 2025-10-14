@@ -6,7 +6,7 @@ const config: CapacitorConfig = {
   webDir: 'dist',
   
   server: {
-    allowNavigation: ['xemusk.com']
+    allowNavigation: ['content.derbayerischeclub.de']
   }
 };
 

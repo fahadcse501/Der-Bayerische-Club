@@ -133,3 +133,9 @@
   color: #6c757d;
 }
 
+
+
+.contact-page.keyboard-visible {
+  transform: translateY(-100px); /* Adjust this value as needed */
+  transition: transform 0.3s ease-in-out;
+}

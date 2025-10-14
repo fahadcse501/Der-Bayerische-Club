@@ -1,4 +1,6 @@
-
+img.treffen-images {
+    width: 100% !important;
+}
 
 .die-treffen ion-card-header {
   font-size: 1.5rem;

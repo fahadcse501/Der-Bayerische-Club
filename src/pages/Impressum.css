@@ -1,0 +1,13 @@
+.impressum-content h1, .impressum-contenth2, .impressum-content h3, .impressum-content h4, .impressum-content p, .impressum-content a, .impressum-content ui, .impressum-content li {
+    color: white;
+    line-height: 1.3em;
+}
+
+.heading
+{
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-align: center;
+    margin-top: 40px;
+}

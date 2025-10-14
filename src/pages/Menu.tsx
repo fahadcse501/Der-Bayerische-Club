@@ -8,8 +8,10 @@ const menuItems = [
   { label: 'Geschichte', path: '/geschichte' },
   { label: 'Treffen', path: '/die-treffen' },
   { label: 'Abiturientenpreis', path: '/der-abiturientenpreis' },
+  { label: 'Impressum', path: '/impressum' },
+  { label: 'Datenschutzerklärung', path: '/datenschutzerklärung' },
+  { label: 'Organisationsstruktur', path: '/organisations' },
   { label: 'Faq', path: '/faq' },
-  // { label: 'Organisationsstruktur', path: '/organisations' },
   { label: 'Kontakt', path: '/contact' },
 ];
 

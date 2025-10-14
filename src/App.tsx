@@ -52,6 +52,8 @@ import '@ionic/react/css/palettes/dark.system.css';
 /* Theme variables */
 import './theme/variables.css';
 import Contact from './pages/Contact';
+import ImpressumPage from './pages/Impressum';
+import DatenschutzerklärungPage from './pages/Datenschutzerklärung';
 
 
 setupIonicReact();
@@ -85,6 +87,14 @@ const App: React.FC = () => {
 
               <Route exact path="/der-abiturientenpreis">
               <Derabiturientenpreis />
+            </Route>
+
+            <Route exact path="/impressum">
+              <ImpressumPage />
+            </Route>
+
+            <Route exact path="/datenschutzerklärung">
+              <DatenschutzerklärungPage  />
             </Route>
 
             <Route exact path="/die-treffen">

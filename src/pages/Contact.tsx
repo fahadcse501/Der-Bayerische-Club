@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import {
   IonPage,
   IonContent,
@@ -14,32 +14,44 @@ import {
   IonCardTitle,
   IonCardContent,
 } from '@ionic/react';
+import { Keyboard } from '@capacitor/keyboard'; // Import Capacitor Keyboard plugin
 import './Contact.css';
 
 const FORM_ID = 33; // your CF7 form ID
 const CONTACT_FORM7_ENDPOINT = `https://xemusk.com/wp-json/contact-form-7/v1/contact-forms/${FORM_ID}/feedback`;
-// set to your site locale & CF7 version if known (harmless if left as below)
-const CF7_VERSION = '5.9';
-const CF7_LOCALE = 'de_DE';
 
 const Contact: React.FC = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [subject, setSubject] = useState('');
-  const [message, setMessage] = useState(''); // optional per your CF7
+  const [message, setMessage] = useState('');
   const [loading, setLoading] = useState(false);
   const [success, setSuccess] = useState(false);
   const [error, setError] = useState('');
-const handleSubmit = async (e: React.FormEvent) => {
-  e.preventDefault();
-  setLoading(true);
-  setError('');
-  setSuccess(false);
+  const [keyboardVisible, setKeyboardVisible] = useState(false);
 
-  const FORM_ID = 33;
-  const ENDPOINT = `https://xemusk.com/wp-json/contact-form-7/v1/contact-forms/${FORM_ID}/feedback`;
+  useEffect(() => {
+    // Listen for keyboard events
+    Keyboard.addListener('keyboardWillShow', () => {
+      setKeyboardVisible(true);
+    });
 
-  try {
+    Keyboard.addListener('keyboardWillHide', () => {
+      setKeyboardVisible(false);
+    });
+
+    // Cleanup listeners on unmount
+    return () => {
+      Keyboard.removeAllListeners();
+    };
+  }, []);
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setLoading(true);
+    setError('');
+    setSuccess(false);
+
     const unitTag = `wpcf7-f${FORM_ID}-p0-o1`;
 
     const fd = new FormData();
@@ -54,47 +66,46 @@ const handleSubmit = async (e: React.FormEvent) => {
     fd.append('your-subject', subject);
     if (message) fd.append('your-message', message);
 
-    // No custom headers, no Authorization — keep it simple for CORS
-    const res = await fetch(ENDPOINT, {
-      method: 'POST',
-      body: fd,
-      mode: 'cors',
-      credentials: 'omit',
-      // DO NOT set Content-Type with FormData
-    });
+    try {
+      const res = await fetch(CONTACT_FORM7_ENDPOINT, {
+        method: 'POST',
+        body: fd,
+        mode: 'cors',
+        credentials: 'omit',
+      });
 
-    // If server returns non-2xx, try to extract details
-    if (!res.ok) {
-      const text = await res.text().catch(() => '');
-      throw new Error(`HTTP ${res.status} ${res.statusText} ${text}`);
+      if (!res.ok) {
+        const text = await res.text().catch(() => '');
+        throw new Error(`HTTP ${res.status} ${res.statusText} ${text}`);
+      }
+
+      const data = await res.json();
+      if (data.status === 'mail_sent') {
+        setSuccess(true);
+        setName('');
+        setEmail('');
+        setSubject('');
+        setMessage('');
+      } else {
+        const msg =
+          data.message ||
+          (Array.isArray(data.invalid_fields)
+            ? data.invalid_fields.map((f: any) => f.message).join(', ')
+            : 'Failed to send message');
+        setError(msg);
+      }
+    } catch (err: any) {
+      setError(err?.message || 'Network error');
+    } finally {
+      setLoading(false);
     }
-
-    const data = await res.json();
-    if (data.status === 'mail_sent') {
-      setSuccess(true);
-      setName('');
-      setEmail('');
-      setSubject('');
-      setMessage('');
-    } else {
-      const msg =
-        data.message ||
-        (Array.isArray(data.invalid_fields)
-          ? data.invalid_fields.map((f: any) => f.message).join(', ')
-          : 'Failed to send message');
-      setError(msg);
-    }
-  } catch (err: any) {
-    setError(err?.message || 'Network error');
-  } finally {
-    setLoading(false);
-  }
-};
-
+  };
 
   return (
     <IonPage>
-      <IonContent className="login-content contact-page page-color">
+      <IonContent
+        className={`login-content contact-page page-color ${keyboardVisible ? 'keyboard-visible' : ''}`}
+      >
         <IonCard>
           <IonCardHeader>
             <IonCardTitle>Kontaktieren Sie uns</IonCardTitle>
@@ -110,9 +121,8 @@ const handleSubmit = async (e: React.FormEvent) => {
             <IonCardTitle>Der Bayerische Club</IonCardTitle>
           </IonCardHeader>
           <IonCardContent>
-            c/o LANGWIESER | Rechtsanwälte Partnerschaft<br />
-            mbB<br />
-            Ottostraße 4<br />
+           C/O Notariat Dr. Markus Riemenschneider Fünf Höfe,<br />
+            Theatinerstraße 12<br />
             80333 München
           </IonCardContent>
         </IonCard>
@@ -154,7 +164,6 @@ const handleSubmit = async (e: React.FormEvent) => {
             <IonTextarea
               value={message}
               onIonChange={(e) => setMessage(e.detail.value ?? '')}
-              // message is optional per your CF7 markup
               placeholder="Ihre Nachricht"
               autoGrow
             />

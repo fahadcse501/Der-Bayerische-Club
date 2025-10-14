@@ -11,7 +11,7 @@ const Dietreffen: React.FC = () => {
         <IonCardHeader>Die Treffen der Mitglieder</IonCardHeader>
 
              <IonCard>
-              <img alt="Silhouette of mountains" src="https://olivercerza.wevence.com/wp-content/uploads/2025/09/Hotel-Vier-Jahreszeiten-1919-e1757573569538.jpg" />
+              <img alt="Silhouette of mountains" className="treffen-images" src="https://content.derbayerischeclub.de/wp-content/uploads/2025/10/Hotel-Vier-Jahreszeiten-1924-1.jpg" />
        
               <IonCardContent>
                 <p>Hotel Vier Jahreszeiten 1919</p> 
@@ -19,7 +19,7 @@ const Dietreffen: React.FC = () => {
             </IonCard>
 
                <IonCard>
-              <img alt="Silhouette of mountains" src="https://olivercerza.wevence.com/wp-content/uploads/2025/09/Hotel-Vier-Jahreszeiten-Kempinski-Munich.jpg" />
+              <img alt="Silhouette of mountains" src="https://content.derbayerischeclub.de/wp-content/uploads/2025/10/Hotel-Vier-Jahreszeiten-Kempinski-Munich-Exterior-1-2048x1516.jpg" />
        
               <IonCardContent>
                 <p>Hotel-Vier-Jahreszeiten-Kempinski-Munich</p> 
@@ -46,7 +46,7 @@ const Dietreffen: React.FC = () => {
 
 
            <IonCard>
-              <img alt="Silhouette of mountains" src="https://olivercerza.wevence.com/wp-content/uploads/2025/09/Josef-Redl-und-SKH-Luitpold-Prinz-von-bayern-1-e1757573633214.jpg" />
+              <img alt="Silhouette of mountains" src="https://content.derbayerischeclub.de/wp-content/uploads/2025/10/Josef-Redl-und-SKH-Luitpold-Prinz-von-bayern.jpg" />
        
               <IonCardContent>
                 <p>Clubmeister Josef Redl mit SKH Prinz Luitpold von Bayern</p> 
@@ -55,10 +55,10 @@ const Dietreffen: React.FC = () => {
 
             
            <IonCard>
-              <img alt="Silhouette of mountains" src="https://olivercerza.wevence.com/wp-content/uploads/2025/09/Stephan-Mayer-e1757573668745.jpg" />
+              <img alt="Silhouette of mountains" src="https://content.derbayerischeclub.de/wp-content/uploads/2025/10/Dr.-Harald-Kreuzer-scaled-2048x1366-1.jpg" />
        
               <IonCardContent>
-                <p>Präsident des Bayerischen Clubs – Stephan Mayer</p> 
+                <p>Dr. Harald Kreuzer</p> 
               </IonCardContent>
             </IonCard>
                  
