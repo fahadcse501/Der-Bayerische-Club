@@ -4,7 +4,7 @@ import './Impressum.css';
 const DatenschutzerklärungPage: React.FC = () => {
   return (
     <IonPage>
-      <IonContent className="ion-padding">
+      <IonContent className="ion-padding impressum-content">
         <h1 className="heading">Datenschutzerklärung</h1>
         <h3>Präambel</h3>
         <p>
