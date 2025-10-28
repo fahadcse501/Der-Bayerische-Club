@@ -20,7 +20,7 @@ const Home: React.FC = () => {
 
 
         <IonCard>
-      <img alt="Silhouette of mountains" src="https://content.derbayerischeclub.de/wp-content/uploads/2025/10/Stephan-Mayer-2-1-1.jpg" />
+      <img alt="Silhouette of mountains" src="assets/Stephan-Mayer.jpg" />
       <IonCardHeader>
         <IonCardTitle>Stephan Mayer</IonCardTitle>
         <IonCardSubtitle>Präsident</IonCardSubtitle>

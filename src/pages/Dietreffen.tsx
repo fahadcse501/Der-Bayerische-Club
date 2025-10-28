@@ -11,7 +11,7 @@ const Dietreffen: React.FC = () => {
         <IonCardHeader>Die Treffen der Mitglieder</IonCardHeader>
 
              <IonCard>
-              <img alt="Silhouette of mountains" className="treffen-images" src="https://content.derbayerischeclub.de/wp-content/uploads/2025/10/Hotel-Vier-Jahreszeiten-1924-1.jpg" />
+              <img alt="Silhouette of mountains" className="treffen-images" src="assets/Hotel-Vier-Jahreszeiten-1924.jpg" />
        
               <IonCardContent>
                 <p>Hotel Vier Jahreszeiten 1919</p> 
@@ -19,7 +19,7 @@ const Dietreffen: React.FC = () => {
             </IonCard>
 
                <IonCard>
-              <img alt="Silhouette of mountains" src="https://content.derbayerischeclub.de/wp-content/uploads/2025/10/Hotel-Vier-Jahreszeiten-Kempinski-Munich-Exterior-1-2048x1516.jpg" />
+              <img alt="Silhouette of mountains" src="assets/Hotel-Vier-Jahreszeiten-Kempinski-Munich-Exterior.jpg" />
        
               <IonCardContent>
                 <p>Hotel-Vier-Jahreszeiten-Kempinski-Munich</p> 
@@ -28,7 +28,7 @@ const Dietreffen: React.FC = () => {
 
      <IonCard>
        <IonCardContent>
-        <p>Seit 1919 – lediglich unterbrochen während des Zweiten Weltkriegs und der Zeit der nationalsozialistischen Diktatur – finden die Zusammenkünfte des Bayerischen Clubs im traditionsreichen Hotel Vier Jahreszeiten in München statt. Der feste Termin ist <b>der dritte Donnerstag im Monat.</b></p>   
+        <p>Seit 1919 – nur unterbrochen während dem Zweiten Weltkrieg und der Zeit von der nationalsozialistischen Diktatur, find’n die Treffen vom Bayerischen Klub im traditionellen Hotel Vier Jahreszeiten in München statt. Der feste Termin is <b>der dritte Donnerstag im Monat.</b></p>   
       </IonCardContent>
     </IonCard>
 
@@ -46,7 +46,7 @@ const Dietreffen: React.FC = () => {
 
 
            <IonCard>
-              <img alt="Silhouette of mountains" src="https://content.derbayerischeclub.de/wp-content/uploads/2025/10/Josef-Redl-und-SKH-Luitpold-Prinz-von-bayern.jpg" />
+              <img alt="Silhouette of mountains" src="assets/Josef-Redl-und-SKH-Luitpold-Prinz-von-bayern.jpg" />
        
               <IonCardContent>
                 <p>Clubmeister Josef Redl mit SKH Prinz Luitpold von Bayern</p> 
@@ -55,7 +55,7 @@ const Dietreffen: React.FC = () => {
 
             
            <IonCard>
-              <img alt="Silhouette of mountains" src="https://content.derbayerischeclub.de/wp-content/uploads/2025/10/Dr.-Harald-Kreuzer-scaled-2048x1366-1.jpg" />
+              <img alt="Silhouette of mountains" src="assets/Dr-Harald-Kreuzer.jpg" />
        
               <IonCardContent>
                 <p>Dr. Harald Kreuzer</p> 
