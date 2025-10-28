@@ -4,7 +4,7 @@ import './Impressum.css';
 const ImpressumPage: React.FC = () => {
   return (
     <IonPage>
-        <IonContent className="ion-padding impressum-content">
+        <IonContent className="ion-padding impressum-content page-color">
 
         <h1 className="heading">Impressum</h1>
 

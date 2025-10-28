@@ -17,8 +17,8 @@ import {
 import { Keyboard } from '@capacitor/keyboard'; // Import Capacitor Keyboard plugin
 import './Contact.css';
 
-const FORM_ID = 33; // your CF7 form ID
-const CONTACT_FORM7_ENDPOINT = `https://xemusk.com/wp-json/contact-form-7/v1/contact-forms/${FORM_ID}/feedback`;
+const FORM_ID = 734; // your CF7 form ID
+const CONTACT_FORM7_ENDPOINT = `https://content.derbayerischeclub.de/wp-json/contact-form-7/v1/contact-forms/${FORM_ID}/feedback`;
 
 const Contact: React.FC = () => {
   const [name, setName] = useState('');

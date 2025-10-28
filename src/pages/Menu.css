@@ -35,7 +35,7 @@
 }
 
 .menu-page ion-item:hover {
-  --background: #e9ecef; /* Lighter background on hover for feedback */
+  --background: #001F46; /* Lighter background on hover for feedback */
   transform: translateX(5px); /* A subtle animation for an interactive feel */
   cursor: pointer;
 }
