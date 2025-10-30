@@ -6,7 +6,7 @@ const SplashScreen: React.FC = () => {
   return (
     <div className="splash-screen">
       <div className="splash-content">
-          <img alt="Silhouette of mountains" className="splash-image" src="assets/logo-opening.webp" />
+          <img alt="Silhouette of mountains" className="splash-image" src="/logo-opening.webp" />
         <div>
           <span className="splash-title">Der Bayerische Club</span>
         </div>

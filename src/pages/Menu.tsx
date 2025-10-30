@@ -19,7 +19,7 @@ const Menu: React.FC = () => {
   return (
     <IonPage>
       <IonContent class='page-color menu-page'>
-        <img alt="Logo" src="https://olivercerza.wevence.com/wp-content/uploads/2025/08/logo-opening-1-e1756242601246-2048x1978.png" style={{ display: 'block', margin: '20px auto', maxWidth: '20%' }} />
+        <img alt="Logo" src="/logo-opening.webp" style={{ display: 'block', margin: '20px auto', maxWidth: '20%' }} />
         <IonList>
           {menuItems.map(item => (
             <IonItem key={item.path} routerLink={item.path}>

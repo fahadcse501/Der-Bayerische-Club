@@ -20,7 +20,7 @@ const Home: React.FC = () => {
 
 
         <IonCard>
-      <img alt="Silhouette of mountains" src="assets/Stephan-Mayer.jpg" />
+      <img alt="Silhouette of mountains" src="/Stephan-Mayer.jpg" />
       <IonCardHeader>
         <IonCardTitle>Stephan Mayer</IonCardTitle>
         <IonCardSubtitle>Präsident</IonCardSubtitle>

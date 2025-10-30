@@ -24,7 +24,7 @@ const Derabiturientenpreis: React.FC = () => {
 
 
            <IonCard>
-              <img alt="Silhouette of mountains" src="assets/Gruppenfoto-Preisverleihung-Abiturientenpreis.jpg" />
+              <img alt="Silhouette of mountains" src="/Gruppenfoto-Preisverleihung-Abiturientenpreis.jpg" />
        
               <IonCardContent>
                 <p>Preisverleihung Abiturientenpreis 2025 in Anwesenheit von unserem Ehrenmitglied Landtagspräsidentin Ilse Aigner und Staatsministerin für Unterricht und Kultus Anna Stolz</p> 
@@ -33,7 +33,7 @@ const Derabiturientenpreis: React.FC = () => {
 
             
            <IonCard>
-              <img alt="Silhouette of mountains" src="assets/Gruppenfoto-Preisverleihung-Abiturientenpreis-2025.jpg" />
+              <img alt="Silhouette of mountains" src="/Gruppenfoto-Preisverleihung-Abiturientenpreis-2025.jpg" />
        
               <IonCardContent>
                 <p>Preisverleihung Abiturientenpreis 2025 in Anwesenheit von unserem Ehrenmitglied Landtagspräsidentin Ilse Aigner und Staatsministerin für Unterricht und Kultus Anna Stolz</p> 

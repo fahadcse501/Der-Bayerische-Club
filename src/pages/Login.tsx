@@ -59,7 +59,7 @@ const Login: React.FC = () => {
         
         
         <form onSubmit={handleLogin} style={{margin: '0 auto'}}>
-        <img alt="Logo" src="assets/logo-opening.webp" style={{ display: 'block', margin: '20px auto', maxWidth: '30%' }} />
+        <img alt="Logo" src="/logo-opening.webp" style={{ display: 'block', margin: '20px auto', maxWidth: '30%' }} />
           
           <div className='login-heading'>Login</div>
           <IonItem>

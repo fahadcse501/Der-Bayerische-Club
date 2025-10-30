@@ -11,7 +11,7 @@ const Dietreffen: React.FC = () => {
         <IonCardHeader>Die Treffen der Mitglieder</IonCardHeader>
 
              <IonCard>
-              <img alt="Silhouette of mountains" className="treffen-images" src="assets/Hotel-Vier-Jahreszeiten-1924.jpg" />
+              <img alt="Silhouette of mountains" className="treffen-images" src="/Hotel-Vier-Jahreszeiten-1924.jpg" />
        
               <IonCardContent>
                 <p>Hotel Vier Jahreszeiten 1919</p> 
@@ -19,7 +19,7 @@ const Dietreffen: React.FC = () => {
             </IonCard>
 
                <IonCard>
-              <img alt="Silhouette of mountains" src="assets/Hotel-Vier-Jahreszeiten-Kempinski-Munich-Exterior.jpg" />
+              <img alt="Silhouette of mountains" src="/Hotel-Vier-Jahreszeiten-Kempinski-Munich-Exterior.jpg" />
        
               <IonCardContent>
                 <p>Hotel-Vier-Jahreszeiten-Kempinski-Munich</p> 
@@ -46,7 +46,7 @@ const Dietreffen: React.FC = () => {
 
 
            <IonCard>
-              <img alt="Silhouette of mountains" src="assets/Josef-Redl-und-SKH-Luitpold-Prinz-von-bayern.jpg" />
+              <img alt="Silhouette of mountains" src="/Josef-Redl-und-SKH-Luitpold-Prinz-von-bayern.jpg" />
        
               <IonCardContent>
                 <p>Clubmeister Josef Redl mit SKH Prinz Luitpold von Bayern</p> 
@@ -55,7 +55,7 @@ const Dietreffen: React.FC = () => {
 
             
            <IonCard>
-              <img alt="Silhouette of mountains" src="assets/Dr-Harald-Kreuzer.jpg" />
+              <img alt="Silhouette of mountains" src="/Dr-Harald-Kreuzer.jpg" />
        
               <IonCardContent>
                 <p>Dr. Harald Kreuzer</p> 
